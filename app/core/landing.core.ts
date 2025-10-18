@@ -1,5 +1,5 @@
 "use server";
-import chromium from "@sparticuz/chromium-min";
+import chromium from "@sparticuz/chromium";
 import puppeteer from "puppeteer-core";
 
 export type ScrapedPrice = {
@@ -20,9 +20,7 @@ export async function scrapeCafeUbaCollection(
   const launchOptions: Parameters<typeof puppeteer.launch>[0] = {
     headless: true,
     args: chromium.args,
-    executablePath: await chromium.executablePath(
-      "https://github.com/Sparticuz/chromium/releases/download/v141.0.0/chromium-v141.0.0-pack.x64.tar"
-    ),
+    executablePath: await chromium.executablePath(),
   };
 
   const browser = await puppeteer.launch(launchOptions);
