@@ -1,36 +1,25 @@
 "use server";
+import { chromium as playwrightChromium } from "playwright-core";
 import chromium from "@sparticuz/chromium";
-import puppeteer from "puppeteer-core";
-
-export type ScrapedPrice = {
-  regular?: string;
-  sale?: string;
-};
-
-export type ScrapedProduct = {
-  name?: string;
-  url?: string;
-  images: string[];
-  price: ScrapedPrice;
-};
+import { ScrapedProduct } from "./product.models";
 
 export async function scrapeCafeUbaCollection(
   collectionUrl: string = "https://www.cafeuba.com.co/en/collections/all"
 ): Promise<ScrapedProduct[]> {
-  const launchOptions: Parameters<typeof puppeteer.launch>[0] = {
-    headless: true,
+  const browser = await playwrightChromium.launch({
     args: chromium.args,
     executablePath: await chromium.executablePath(),
-  };
+    headless: true,
+  });
 
-  const browser = await puppeteer.launch(launchOptions);
   try {
     const page = await browser.newPage();
 
     await page.goto(collectionUrl, {
-      waitUntil: "networkidle2",
+      waitUntil: "networkidle",
       timeout: 120000,
     });
+
     await page.waitForSelector("#product-grid", { timeout: 120000 });
 
     const origin = new URL(collectionUrl).origin;
@@ -38,22 +27,19 @@ export async function scrapeCafeUbaCollection(
     const data = await page.evaluate((originIn) => {
       const out: ScrapedProduct[] = [];
       const grid = document.querySelector("#product-grid");
-
       if (!grid) return out;
 
       const items = grid.querySelectorAll("li.grid__item");
 
       items.forEach((li) => {
-        const linkEl = li.querySelector<HTMLAnchorElement>("a.card__media");
+        const linkEl = li.querySelector("a.card__media");
         const rawHref = linkEl?.getAttribute("href") || undefined;
         const url = rawHref ? new URL(rawHref, originIn).toString() : undefined;
 
-        const nameEl = li.querySelector<HTMLElement>(".card-information__text");
+        const nameEl = li.querySelector(".card-information__text");
         const name = nameEl?.textContent?.trim() || undefined;
 
-        const imgEls = Array.from(
-          li.querySelectorAll<HTMLImageElement>(".card__media img")
-        );
+        const imgEls = Array.from(li.querySelectorAll(".card__media img"));
         const images = Array.from(
           new Set(
             imgEls
