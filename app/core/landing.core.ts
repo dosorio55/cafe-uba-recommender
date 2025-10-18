@@ -81,6 +81,9 @@ export async function scrapeCafeUbaCollection(
     }, origin);
 
     return data;
+  } catch (e) {
+    console.error(e);
+    return [];
   } finally {
     await browser.close();
   }
