@@ -1,26 +1,110 @@
+@plugin 'tailwindcss-animate';
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-body);
+  --color-sidebar-ring: var(--ring);
+  --color-sidebar-border: var(--border);
+  --color-sidebar-accent-foreground: var(--accent-foreground);
+  --color-sidebar-accent: var(--accent);
+  --color-sidebar-primary-foreground: var(--primary-foreground);
+  --color-sidebar-primary: var(--primary);
+  --color-sidebar-foreground: var(--foreground);
+  --color-sidebar: var(--background);
+  --color-chart-5: var(--accent);
+  --color-chart-4: var(--accent);
+  --color-chart-3: var(--accent);
+  --color-chart-2: var(--accent);
+  --color-chart-1: var(--primary);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--foreground);
+  --color-popover: var(--background);
+  --color-card-foreground: var(--foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  --radius: 0.625rem;
+  --background: rgb(255 255 255);
+  --foreground: rgb(33 35 38);
+  --card: rgb(255 255 255);
+  --card-foreground: rgb(33 35 38);
+  --popover: rgb(255 255 255);
+  --popover-foreground: rgb(33 35 38);
+
+  --primary: rgb(247 196 220);
+  --primary-foreground: rgb(33 35 38);
+  --secondary: rgb(240 240 240);
+  --secondary-foreground: rgb(33 35 38);
+  --muted: rgb(240 240 240);
+  --muted-foreground: rgb(87 87 87);
+  --accent: rgb(247 196 220);
+  --accent-foreground: rgb(33 35 38);
+  --destructive: rgb(215 44 13);
+  --border: rgb(183 183 183);
+  --input: rgb(183 183 183);
+  --ring: rgb(135 173 245);
+  --chart-1: var(--primary);
+  --chart-2: var(--accent);
+  --chart-3: var(--secondary);
+  --chart-4: var(--accent);
+  --chart-5: var(--accent);
+  --sidebar: var(--background);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+  --font-body: Helvetica, Arial, sans-serif;
+  --font-display: "Louis George", Helvetica, Arial, sans-serif;
+  --color-heading: 33 35 38;
+  --color-link: 33 35 38;
+  --font-body-scale: 1;
+  --font-heading-scale: 1;
+  --grid-horizontal-spacing: 3.2rem;
+  --duration-default: 200ms;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    @apply text-foreground;
+  }
+  button {
+    @apply bg-primary text-primary-foreground rounded-md transition-colors;
+  }
+  button:hover {
+    @apply bg-accent text-accent-foreground;
+  }
 }
