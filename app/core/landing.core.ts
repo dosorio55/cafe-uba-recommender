@@ -21,7 +21,9 @@ export async function scrapeCafeUbaCollection(
   const launchOptions: Parameters<typeof puppeteer.launch>[0] = {
     headless: true,
     args: chromium.args,
-    executablePath: await chromium.executablePath(),
+    executablePath: await chromium.executablePath(
+      "https://github.com/Sparticuz/chromium/releases/download/v141.0.0/chromium-v141.0.0-pack.tar"
+    ),
   };
   const browser = await puppeteer.launch(launchOptions);
   try {
