@@ -1,6 +1,6 @@
-import Header from "./components/Header";
+import Header from "./components/header";
 import ProductsList from "./components/products-list";
-import SearchHero from "./components/SearchHero";
+import SearchHero from "./components/search-hero";
 
 export default function Home() {
   return (

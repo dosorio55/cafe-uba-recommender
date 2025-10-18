@@ -26,9 +26,7 @@ export async function scrapeCafeUbaCollection(
   const browser = await puppeteer.launch(launchOptions);
   try {
     const page = await browser.newPage();
-    // await page.setUserAgent(
-    //   "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123 Safari/537.36"
-    // );
+
     await page.goto(collectionUrl, {
       waitUntil: "networkidle2",
       timeout: 120000,
@@ -38,10 +36,13 @@ export async function scrapeCafeUbaCollection(
     const origin = new URL(collectionUrl).origin;
 
     const data = await page.evaluate((originIn) => {
-      const out: ScrapedProduct[] = [] as any;
+      const out: ScrapedProduct[] = [];
       const grid = document.querySelector("#product-grid");
+
       if (!grid) return out;
+
       const items = grid.querySelectorAll("li.grid__item");
+
       items.forEach((li) => {
         const linkEl = li.querySelector<HTMLAnchorElement>("a.card__media");
         const rawHref = linkEl?.getAttribute("href") || undefined;
@@ -68,12 +69,14 @@ export async function scrapeCafeUbaCollection(
         const saleEl = li.querySelector(
           ".price .price__sale .price-item.price-item--sale"
         );
+
         const textOf = (el: Element | null) =>
           el ? el.textContent?.replace(/\s+/g, " ").trim() : undefined;
         const price = { regular: textOf(regularEl), sale: textOf(saleEl) };
 
         out.push({ name, url, images, price });
       });
+
       return out;
     }, origin);
 
