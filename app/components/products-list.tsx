@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { scrapeCafeUbaCollection } from "../core/landing.core";
 
 const ProductsList = () => {
   type Price = { regular?: string; sale?: string };
@@ -18,8 +17,9 @@ const ProductsList = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await scrapeCafeUbaCollection();
-        setProducts(res);
+        const res = await fetch("/api/scrape", { cache: "no-store" });
+        const data = await res.json();
+        setProducts(data);
         
       } catch (error) {
         console.error("Error fetching products:", error);
