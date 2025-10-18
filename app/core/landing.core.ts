@@ -21,7 +21,7 @@ export async function scrapeCafeUbaCollection(
     headless: true,
     args: chromium.args,
     executablePath: await chromium.executablePath(
-      "https://github.com/Sparticuz/chromium/releases/download/v141.0.0/chromium-v141.0.0-pack.x64.tar"
+      "https://21dnqu8tjluawlfr.public.blob.vercel-storage.com/chromium-v141.0.0-pack.x64.tar"
     ),
   };
 
