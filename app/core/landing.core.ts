@@ -1,28 +1,19 @@
 "use server";
-import chromium from "@sparticuz/chromium-min";
+
+import {
+  getChromiumArgs,
+  getChromiumExecutablePath,
+} from "./chromium-singleton";
 import puppeteer from "puppeteer-core";
-
-export type ScrapedPrice = {
-  regular?: string;
-  sale?: string;
-};
-
-export type ScrapedProduct = {
-  name?: string;
-  url?: string;
-  images: string[];
-  price: ScrapedPrice;
-};
+import { ScrapedProduct } from "./product.models";
 
 export async function scrapeCafeUbaCollection(
   collectionUrl: string = "https://www.cafeuba.com.co/en/collections/all"
 ): Promise<ScrapedProduct[]> {
   const launchOptions: Parameters<typeof puppeteer.launch>[0] = {
     headless: true,
-    args: chromium.args,
-    executablePath: await chromium.executablePath(
-      "https://21dnqu8tjluawlfr.public.blob.vercel-storage.com/chromium-v141.0.0-pack.x64.tar"
-    ),
+    args: getChromiumArgs(),
+    executablePath: await getChromiumExecutablePath(),
   };
 
   const browser = await puppeteer.launch(launchOptions);
