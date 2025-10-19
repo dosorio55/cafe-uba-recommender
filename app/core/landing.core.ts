@@ -26,6 +26,25 @@ export async function scrapeCafeUbaCollection(
     });
     await page.waitForSelector("#product-grid", { timeout: 120000 });
 
+    let prevCount = 0;
+    for (let i = 0; i < 50; i++) {
+      const count = await page.evaluate(() => {
+        const items = document.querySelectorAll("#product-grid li.grid__item");
+        const last = items[items.length - 1];
+        if (last && typeof last.scrollIntoView === "function")
+          last.scrollIntoView();
+        return items.length;
+      });
+
+      await page.evaluate(() => new Promise((r) => setTimeout(r, 800)));
+      const after = await page.evaluate(
+        () => document.querySelectorAll("#product-grid li.grid__item").length
+      );
+
+      if (after <= prevCount || after <= count) break;
+      prevCount = after;
+    }
+
     const origin = new URL(collectionUrl).origin;
 
     const data = await page.evaluate((originIn) => {

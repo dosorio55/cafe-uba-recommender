@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { generateBaristaReply } from "../core/agent-barista.core";
 
 export default function SearchHero() {
   const suggestions = useMemo(
@@ -20,21 +21,44 @@ export default function SearchHero() {
   );
 
   const [query, setQuery] = useState("");
+  const [reply, setReply] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
 
-  function addToken(token: string) {
+  const addToken = (token: string) => {
     if (!query) return setQuery(token);
     const hasSpace = /\s$/.test(query);
     setQuery(hasSpace ? `${query}${token}` : `${query} ${token}`);
-  }
+  };
 
-  function onSubmit(e: React.FormEvent) {
+  const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-  }
+
+    try {
+      setLoading(true);
+      setReply(null);
+
+      const reply = await generateBaristaReply(query);
+      if (!reply) {
+        throw new Error("Request failed");
+      }
+
+      setReply(reply);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <section className="w-full flex flex-col items-center gap-6 py-12">
-      <h2 className="text-2xl md:text-3xl font-display text-foreground tracking-wide">What coffee do you want today?</h2>
-      <form onSubmit={onSubmit} className="w-full max-w-2xl flex items-stretch gap-2">
+      <h2 className="text-2xl md:text-3xl font-display text-foreground tracking-wide">
+        What coffee do you want today?
+      </h2>
+      <form
+        onSubmit={onSubmit}
+        className="w-full max-w-2xl flex items-stretch gap-2"
+      >
         <input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
@@ -43,7 +67,8 @@ export default function SearchHero() {
         />
         <button
           type="submit"
-          className="h-12 px-5 rounded-md bg-primary text-primary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+          className="h-12 px-5 rounded-md bg-primary text-primary-foreground transition-colors hover:bg-accent hover:text-accent-foreground disabled:opacity-50"
+          disabled={loading}
         >
           Search
         </button>
@@ -59,6 +84,18 @@ export default function SearchHero() {
             {s}
           </button>
         ))}
+      </div>
+      <div className="w-full max-w-2xl mt-4">
+        {loading && (
+          <div className="rounded-md border border-border bg-card p-4 text-sm text-muted-foreground">
+            Thinking...
+          </div>
+        )}
+        {!loading && reply && (
+          <div className="rounded-md border border-border bg-card p-4 whitespace-pre-wrap">
+            {reply}
+          </div>
+        )}
       </div>
     </section>
   );
