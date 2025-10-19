@@ -1,0 +1,778 @@
+[
+  {
+    "name": "Café Agi",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-agi",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/agi_26c7c0d1-3934-426a-9aae-e9ed4700ac46.png?v=1741885556&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/agi_aead5ef0-ddae-478f-840a-5cab6c498d12.png?v=1741885625&width=1100"
+    ],
+    "price": {
+      "regular": "$36.000 COP $58.000 COP",
+      "sale": "$36.000 COP $58.000 COP"
+    },
+    "profile": "Blackberry – Sugarcane – Grape",
+    "altitude": "1,400 meters above sea level",
+    "process": "Culturing",
+    "variety": ["Caturra"],
+    "description": "Culturing Process:\n\nIt is a coffee fermentation technique in which starter cultures of fruits, aromatic plants and microorganisms are used.",
+    "flavor_tags": ["fruity", "sweet", "aromatic"],
+    "body": ["full"],
+    "acidity": ["medium"],
+    "mood_tags": ["experimental", "vibrant", "bold"],
+    "expected_flavor": ["funky", "aromatic"],
+    "notes": [
+      "blackberry",
+      "sugarcane",
+      "grape",
+      "fermented",
+      "full-bodied",
+      "complex"
+    ]
+  },
+  {
+    "name": "Café Amanecer",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-amanecer",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/amanecer.png?v=1741885556&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/amanecer_7c7328da-ceaf-40d6-b3bf-88f63bdbebdb.png?v=1741885624&width=1100"
+    ],
+    "price": {
+      "regular": "$39.000 COP $49.000 COP",
+      "sale": "$39.000 COP $49.000 COP"
+    },
+    "profile": "Honey – Sugarcane – Mandarin",
+    "altitude": "1,750 meters above sea level",
+    "process": "Washing",
+    "variety": ["Yellow Bourbon"],
+    "description": "Washing Process:\n\nIt is a process developed at the La Riviera farm, in which the coffee After harvesting, it is pulped and left to ferment for 20-24 hours, then washed and dried in the sun.",
+    "flavor_tags": ["sweet", "citrus", "clean"],
+    "body": ["light"],
+    "acidity": ["high"],
+    "mood_tags": ["bright", "refreshing", "classic"],
+    "expected_flavor": ["clean", "bright"],
+    "notes": [
+      "honey",
+      "sugarcane",
+      "mandarin",
+      "vibrant",
+      "light-bodied",
+      "fresh"
+    ]
+  },
+  {
+    "name": "Café April",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-april",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/april.png?v=1741885556&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/april_cc45702e-c16e-4fe9-8b1a-283a3c551b2d.png?v=1741885624&width=1100"
+    ],
+    "price": {
+      "regular": "$36.000 COP $58.000 COP",
+      "sale": "$36.000 COP $58.000 COP"
+    },
+    "profile": "Peach – Floral – Caramel",
+    "altitude": "1,400 meters above sea level",
+    "process": "Culturing",
+    "variety": ["Caturra"],
+    "description": "Culturing Process:\n\nIt is a coffee fermentation technique in which starter cultures of fruits, aromatic plants and microorganisms are used.",
+    "flavor_tags": ["floral", "sweet", "fruity"],
+    "body": ["full"],
+    "acidity": ["medium"],
+    "mood_tags": ["delicate", "experimental", "smooth"],
+    "expected_flavor": ["funky", "aromatic"],
+    "notes": ["peach", "floral", "caramel", "fermented", "round", "balanced"]
+  },
+  {
+    "name": "Café Arrebol",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-arrebol",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/arrebol.png?v=1741885556&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/arrebol_421f100f-9b79-4986-b583-d13494230ed2.png?v=1741885624&width=1100"
+    ],
+    "price": {
+      "regular": "$39.000 COP $49.000 COP",
+      "sale": "$39.000 COP $49.000 COP"
+    },
+    "profile": "Cherry – Raspberry – Vanilla",
+    "altitude": "1,750 meters above sea level",
+    "process": "Washing",
+    "variety": ["Rosé Bourbon"],
+    "description": "Washing Process:\n\nIt is a process developed at the La Riviera coffee farm, in which the coffee is pulped after being harvested and left to ferment for 20-24 hours, before being washed and dried in the sun.",
+    "flavor_tags": ["fruity", "sweet", "clean"],
+    "body": ["light"],
+    "acidity": ["high"],
+    "mood_tags": ["bright", "elegant", "classic"],
+    "expected_flavor": ["clean", "bright"],
+    "notes": ["cherry", "raspberry", "vanilla", "juicy", "vibrant", "refined"]
+  },
+  {
+    "name": "Rainbow Bourbon Coffee",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-borbon-arcoiris",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/borbon_arcoiris.png?v=1741885557&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/borbon_arcoiris_eedf9762-9350-4970-8b97-67e18ea8de55.png?v=1741885625&width=1100"
+    ],
+    "price": {
+      "regular": "$39.000 COP $49.000 COP",
+      "sale": "$39.000 COP $49.000 COP"
+    },
+    "profile": "Blackberry – Apple – Honey",
+    "altitude": "1,750 meters above sea level",
+    "process": "Washing",
+    "variety": ["Bourbon (Red, Yellow and Pink)"],
+    "description": "Washing Process:\n\nIt is a process developed in the coffee farm The Riviera, in which the coffee After harvesting, it is pulped and left to ferment for 20-24 hours, then washed and dried in the sun.",
+    "flavor_tags": ["fruity", "sweet", "balanced"],
+    "body": ["light"],
+    "acidity": ["high"],
+    "mood_tags": ["cheerful", "vivid", "classic"],
+    "expected_flavor": ["clean", "bright"],
+    "notes": ["blackberry", "apple", "honey", "juicy", "refreshing", "silky"]
+  },
+  {
+    "name": "Captain Mark Cafe",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-capitan-mark",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/capitan_mark.png?v=1741885556&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/capitan_mark_9dc35ea9-3730-4e9b-8bc9-3ade295e132e.png?v=1741901661&width=1100"
+    ],
+    "price": {
+      "regular": "$36.000 COP $47.000 COP",
+      "sale": "$36.000 COP $47.000 COP"
+    },
+    "profile": "Oak – Rum – Vanilla",
+    "altitude": "1,400 meters above sea level",
+    "process": "Culturing",
+    "variety": ["Caturra"],
+    "description": "Infused Process: A technique in which liquor is added during the final stage of coffee fermentation, seeking to modify this fermentation stage to obtain a coffee with a unique sensory profile.",
+    "flavor_tags": ["spiced", "sweet", "aromatic"],
+    "body": ["full"],
+    "acidity": ["medium"],
+    "mood_tags": ["bold", "experimental", "warm"],
+    "expected_flavor": ["complex", "rich"],
+    "notes": ["oak", "rum", "vanilla", "fermented", "full-bodied", "unique"]
+  },
+  {
+    "name": "Café Cardenal",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-cardenal",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/cardenal.png?v=1741885556&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/cardenal_6e8ee6a3-75a8-4bf2-8447-c4528f37755a.png?v=1741885624&width=1100"
+    ],
+    "price": {
+      "regular": "$39.000 COP $49.000 COP",
+      "sale": "$39.000 COP $49.000 COP"
+    },
+    "profile": "White Chocolate – Plums – Blackberries",
+    "altitude": "1,750 meters above sea level",
+    "process": "Washing",
+    "variety": ["Red Bourbon"],
+    "description": "Washing Process:\n\nIt is a process developed at the La Riviera coffee farm, in which the coffee is pulped after being harvested and left to ferment for 20-24 hours, before being washed and dried in the sun.",
+    "flavor_tags": ["fruity", "sweet", "clean"],
+    "body": ["light"],
+    "acidity": ["high"],
+    "mood_tags": ["elegant", "bright", "classic"],
+    "expected_flavor": ["clean", "juicy"],
+    "notes": [
+      "white chocolate",
+      "plums",
+      "blackberries",
+      "bright",
+      "balanced",
+      "silky"
+    ]
+  },
+  {
+    "name": "Catiope Coffee",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-catiope",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/catiope_15217337-57c3-4ddf-86ae-4c9a679bbd2a.png?v=1741901562&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/catiope_7a413739-dc33-4023-9cfb-4ff3d5f8e6e8.png?v=1741901562&width=1100"
+    ],
+    "price": {
+      "regular": "$39.000 COP $49.000 COP",
+      "sale": "$39.000 COP $49.000 COP"
+    },
+    "profile": "Natural Process",
+    "altitude": "1,750 meters above sea level",
+    "process": "Natural",
+    "variety": ["Catiope"],
+    "description": "Natural Process:\n\nIt is a process developed in the coffee farm La Riviera, where the coffee is left in water for 12 hours after being harvested and then dried without pulping.",
+    "flavor_tags": ["fruity", "wild", "natural"],
+    "body": ["medium"],
+    "acidity": ["medium"],
+    "mood_tags": ["earthy", "experimental", "complex"],
+    "expected_flavor": ["fermented", "vivid"],
+    "notes": [
+      "catiope",
+      "natural",
+      "fermented",
+      "fruity",
+      "balanced",
+      "distinctive"
+    ]
+  },
+  {
+    "name": "Caturra Nitro Coffee",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-caturra-nitro",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/caturra_nitro.png?v=1741885556&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/caturra_nitro_a7540142-5564-4d47-acae-d56d4443f577.png?v=1741901503&width=1100"
+    ],
+    "price": {
+      "regular": "$36.000 COP $58.000 COP",
+      "sale": "$36.000 COP $58.000 COP"
+    },
+    "profile": "Nitro Process",
+    "altitude": "1,400 meters above sea level",
+    "process": "Nitro",
+    "variety": ["Caturra"],
+    "description": "Nitro Process: Coffee fermentation technique that modifies atmospheres in a bioreactor by fermenting pulped coffee, fruit must, and starter cultures in combination.",
+    "flavor_tags": ["creamy", "fermented", "fruity"],
+    "body": ["full"],
+    "acidity": ["medium"],
+    "mood_tags": ["bold", "experimental", "innovative"],
+    "expected_flavor": ["smooth", "complex"],
+    "notes": [
+      "caturra",
+      "nitro",
+      "fermented",
+      "fruity",
+      "full-bodied",
+      "unique"
+    ]
+  },
+  {
+    "name": "Café Gesha",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-gesha",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/gesha_9c0c884e-829d-421a-b6fa-0cc7ca5df606.png?v=1741885556&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/gesha_071befc8-d8cc-43aa-b919-e7367a6f11b7.png?v=1741885625&width=1100"
+    ],
+    "price": {
+      "regular": "$54.000 COP $75.000 COP",
+      "sale": "$54.000 COP $75.000 COP"
+    },
+    "profile": "Washing Process",
+    "altitude": "1,750 meters above sea level",
+    "process": "Washing",
+    "variety": ["Gesha"],
+    "description": "Washing Process:\n\nIt is a process developed in the coffee farm La Riviera, where the coffee is pulped after being harvested and left to ferment for 20-24 hours, before being washed and dried in the sun.",
+    "flavor_tags": ["floral", "fruity", "complex"],
+    "body": ["light"],
+    "acidity": ["high"],
+    "mood_tags": ["refined", "bright", "elegant"],
+    "expected_flavor": ["clean", "aromatic"],
+    "notes": ["gesha", "floral", "fruity", "bright", "balanced", "silky"]
+  },
+  {
+    "name": "Captain Mark Cafe",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-capitan-mark",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/capitan_mark.png?v=1741885556&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/capitan_mark_9dc35ea9-3730-4e9b-8bc9-3ade295e132e.png?v=1741901661&width=1100"
+    ],
+    "price": {
+      "regular": "$36.000 COP $47.000 COP",
+      "sale": "$36.000 COP $47.000 COP"
+    },
+    "profile": "Oak – Rum – Vanilla",
+    "altitude": "1,400 meters above sea level",
+    "process": "Culturing",
+    "variety": ["Caturra"],
+    "description": "Infused Process: A technique in which liquor is added during the final stage of coffee fermentation, seeking to modify this fermentation stage to obtain a coffee with a unique sensory profile.",
+    "flavor_tags": ["spiced", "sweet", "aromatic"],
+    "body": ["full"],
+    "acidity": ["medium"],
+    "mood_tags": ["bold", "experimental", "warm"],
+    "expected_flavor": ["complex", "rich"],
+    "notes": ["oak", "rum", "vanilla", "fermented", "full-bodied", "unique"]
+  },
+  {
+    "name": "Café Cardenal",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-cardenal",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/cardenal.png?v=1741885556&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/cardenal_6e8ee6a3-75a8-4bf2-8447-c4528f37755a.png?v=1741885624&width=1100"
+    ],
+    "price": {
+      "regular": "$39.000 COP $49.000 COP",
+      "sale": "$39.000 COP $49.000 COP"
+    },
+    "profile": "White Chocolate – Plums – Blackberries",
+    "altitude": "1,750 meters above sea level",
+    "process": "Washing",
+    "variety": ["Red Bourbon"],
+    "description": "Washing Process:\n\nIt is a process developed at the La Riviera coffee farm, in which the coffee is pulped after being harvested and left to ferment for 20-24 hours, before being washed and dried in the sun.",
+    "flavor_tags": ["fruity", "sweet", "clean"],
+    "body": ["light"],
+    "acidity": ["high"],
+    "mood_tags": ["elegant", "bright", "classic"],
+    "expected_flavor": ["clean", "juicy"],
+    "notes": [
+      "white chocolate",
+      "plums",
+      "blackberries",
+      "bright",
+      "balanced",
+      "silky"
+    ]
+  },
+  {
+    "name": "Catiope Coffee",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-catiope",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/catiope_15217337-57c3-4ddf-86ae-4c9a679bbd2a.png?v=1741901562&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/catiope_7a413739-dc33-4023-9cfb-4ff3d5f8e6e8.png?v=1741901562&width=1100"
+    ],
+    "price": {
+      "regular": "$39.000 COP $49.000 COP",
+      "sale": "$39.000 COP $49.000 COP"
+    },
+    "profile": "Natural Process",
+    "altitude": "1,750 meters above sea level",
+    "process": "Natural",
+    "variety": ["Catiope"],
+    "description": "Natural Process:\n\nIt is a process developed in the coffee farm La Riviera, where the coffee is left in water for 12 hours after being harvested and then dried without pulping.",
+    "flavor_tags": ["fruity", "wild", "natural"],
+    "body": ["medium"],
+    "acidity": ["medium"],
+    "mood_tags": ["earthy", "experimental", "complex"],
+    "expected_flavor": ["fermented", "vivid"],
+    "notes": [
+      "catiope",
+      "natural",
+      "fermented",
+      "fruity",
+      "balanced",
+      "distinctive"
+    ]
+  },
+  {
+    "name": "Caturra Nitro Coffee",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-caturra-nitro",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/caturra_nitro.png?v=1741885556&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/caturra_nitro_a7540142-5564-4d47-acae-d56d4443f577.png?v=1741901503&width=1100"
+    ],
+    "price": {
+      "regular": "$36.000 COP $58.000 COP",
+      "sale": "$36.000 COP $58.000 COP"
+    },
+    "profile": "Nitro Process",
+    "altitude": "1,400 meters above sea level",
+    "process": "Nitro",
+    "variety": ["Caturra"],
+    "description": "Nitro Process: Coffee fermentation technique that modifies atmospheres in a bioreactor by fermenting pulped coffee, fruit must, and starter cultures in combination.",
+    "flavor_tags": ["creamy", "fermented", "fruity"],
+    "body": ["full"],
+    "acidity": ["medium"],
+    "mood_tags": ["bold", "experimental", "innovative"],
+    "expected_flavor": ["smooth", "complex"],
+    "notes": [
+      "caturra",
+      "nitro",
+      "fermented",
+      "fruity",
+      "full-bodied",
+      "unique"
+    ]
+  },
+  {
+    "name": "Café Gesha",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-gesha",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/gesha_9c0c884e-829d-421a-b6fa-0cc7ca5df606.png?v=1741885556&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/gesha_071befc8-d8cc-43aa-b919-e7367a6f11b7.png?v=1741885625&width=1100"
+    ],
+    "price": {
+      "regular": "$54.000 COP $75.000 COP",
+      "sale": "$54.000 COP $75.000 COP"
+    },
+    "profile": "Washing Process",
+    "altitude": "1,750 meters above sea level",
+    "process": "Washing",
+    "variety": ["Gesha"],
+    "description": "Washing Process:\n\nIt is a process developed in the coffee farm La Riviera, where the coffee is pulped after being harvested and left to ferment for 20-24 hours, before being washed and dried in the sun.",
+    "flavor_tags": ["floral", "fruity", "complex"],
+    "body": ["light"],
+    "acidity": ["high"],
+    "mood_tags": ["refined", "bright", "elegant"],
+    "expected_flavor": ["clean", "aromatic"],
+    "notes": ["gesha", "floral", "fruity", "bright", "balanced", "silky"]
+  },
+  {
+    "name": "Café Niu",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-niu",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/niu_152a5271-a5c4-4691-8b5e-3ef5d6753c08.png?v=1741885556&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/niu_aa6a60f1-0467-4bcc-b954-05c7ece563c5.png?v=1741885625&width=1100"
+    ],
+    "price": {
+      "regular": "$36.000 COP $47.000 COP",
+      "sale": "$36.000 COP $47.000 COP"
+    },
+    "profile": "Culturing Process",
+    "altitude": "1,400 meters above sea level",
+    "process": "Culturing",
+    "variety": ["Caturra"],
+    "description": "Culturing Process:\n\nIt is a coffee fermentation technique in which starter cultures of fruits, aromatic plants and microorganisms are used.",
+    "flavor_tags": ["fruity", "floral", "sweet"],
+    "body": ["medium"],
+    "acidity": ["medium"],
+    "mood_tags": ["aromatic", "gentle", "balanced"],
+    "expected_flavor": ["complex", "balanced"],
+    "notes": [
+      "caturra",
+      "culturing",
+      "fruity",
+      "floral",
+      "medium-bodied",
+      "balanced"
+    ]
+  },
+  {
+    "name": "Café Pink Moon (Decaf)",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/copy-cafe-agi",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/5F2D505F-1016-406C-8954-4E556F2F5FD3.png?v=1751604672&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/E951D626-F37C-4658-A6AB-0FAC910FC01B.png?v=1751604672&width=1100"
+    ],
+    "price": {
+      "regular": "$36.000 COP $58.000 COP",
+      "sale": "$36.000 COP $58.000 COP"
+    },
+    "profile": "Canela – Lima – Chocolate",
+    "altitude": "1.750 m.s.n.m.",
+    "process": "Descafeinado con extracto de caña de azúcar",
+    "variety": ["Borbón rosado (Natural)"],
+    "description": "Proceso Descafeinado:\n\nProceso que utiliza acetato de etilo natural de la caña de azúcar local, combinado con agua de manantial, donde se elimina la cafeína de manera suave y natural. Los granos verdes son tratados con calor y presión ligera preservando su sabor auténtico y suave.",
+    "flavor_tags": ["mild", "sweet", "spicy"],
+    "body": ["light"],
+    "acidity": ["low"],
+    "mood_tags": ["gentle", "relaxing", "smooth"],
+    "expected_flavor": ["soft", "chocolatey"],
+    "notes": [
+      "borbón rosado",
+      "decaf",
+      "canela",
+      "lima",
+      "chocolate",
+      "smooth",
+      "light-bodied"
+    ]
+  },
+  {
+    "name": "Primitive Coffee",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-primitivo",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/primitivo_57c176f4-d63d-47b9-b3b9-13a7b93b7a54.png?v=1741885556&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/primitivo_d539d2b0-a484-4578-99d9-0c3bf4878a43.png?v=1741885625&width=1100"
+    ],
+    "price": {
+      "regular": "$32.000 COP $43.000 COP",
+      "sale": "$32.000 COP $43.000 COP"
+    },
+    "profile": "Washing Process",
+    "altitude": "1,750 meters above sea level",
+    "process": "Washing",
+    "variety": ["Caturra"],
+    "description": "Washing Process:\n\nIt is a process developed at the La Riviera coffee farm, in which the coffee is pulped after being harvested and left to ferment for 20-24 hours, before being washed and dried in the sun.",
+    "flavor_tags": ["balanced", "clean", "fruity"],
+    "body": ["medium"],
+    "acidity": ["medium"],
+    "mood_tags": ["classic", "pleasant", "reliable"],
+    "expected_flavor": ["clean", "balanced"],
+    "notes": ["caturra", "washed", "medium-bodied", "fruity", "balanced"]
+  },
+  {
+    "name": "Sudan Rumé Coffee",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-sudan-rume",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/sudan_rume.png?v=1741901016&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/sudan_rume_df68a18b-8873-4c2c-85a2-11ec82753380.png?v=1741901016&width=1100"
+    ],
+    "price": {
+      "regular": "$54.000 COP $75.000 COP",
+      "sale": "$54.000 COP $75.000 COP"
+    },
+    "profile": "Natural Process",
+    "altitude": "1,750 meters above sea level",
+    "process": "Natural",
+    "variety": ["Sudan Rumé"],
+    "description": "Natural Process:\n\nIt is a process developed at the La Riviera coffee farm, in which the coffee, after being harvested, is left in water for 12 hours and then dried without pulping.",
+    "flavor_tags": ["fruity", "intense", "earthy"],
+    "body": ["full"],
+    "acidity": ["medium"],
+    "mood_tags": ["rich", "complex", "vibrant"],
+    "expected_flavor": ["vivid", "fruity"],
+    "notes": ["sudan rumé", "natural", "full-bodied", "fruity", "complex"]
+  },
+  {
+    "name": "Tangerine Coffee",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/tangerine-coffee",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/tangerine.png?v=1741885556&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/tangerine_7e7b546b-66c8-497c-9bd5-4ac3afe6aacb.png?v=1741885625&width=1100"
+    ],
+    "price": {
+      "regular": "$36.000 COP $47.000 COP",
+      "sale": "$36.000 COP $47.000 COP"
+    },
+    "profile": "Culturing Process",
+    "altitude": "1,400 meters above sea level",
+    "process": "Culturing",
+    "variety": ["Caturra"],
+    "description": "Culturing Process:\n\nIt is a fermentation technique in which starter cultures of fruits, aromatic plants and microorganisms are used.",
+    "flavor_tags": ["fruity", "sweet", "bright"],
+    "body": ["medium"],
+    "acidity": ["medium"],
+    "mood_tags": ["aromatic", "lively", "balanced"],
+    "expected_flavor": ["fruity", "complex"],
+    "notes": [
+      "caturra",
+      "tangerine",
+      "culturing",
+      "medium-bodied",
+      "fruity",
+      "balanced"
+    ]
+  },
+  {
+    "name": "Toffee Coffee",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-tangerine",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/toffee.png?v=1741885556&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/toffee_d285c7dc-bcd9-4586-92f6-967eb99dcf8d.png?v=1741885624&width=1100"
+    ],
+    "price": {
+      "regular": "$36.000 COP $47.000 COP",
+      "sale": "$36.000 COP $47.000 COP"
+    },
+    "profile": "Culturing Process",
+    "altitude": "1,400 meters above sea level",
+    "process": "Culturing",
+    "variety": ["Caturra"],
+    "description": "Culturing Process:\n\nIt is a coffee fermentation technique in which starter cultures of fruits, aromatic plants and microorganisms are used.",
+    "flavor_tags": ["fruity", "sweet", "complex"],
+    "body": ["medium"],
+    "acidity": ["medium"],
+    "mood_tags": ["aromatic", "balanced", "smooth"],
+    "expected_flavor": ["fruity", "balanced"],
+    "notes": [
+      "caturra",
+      "toffee",
+      "culturing",
+      "medium-bodied",
+      "fruity",
+      "sweet"
+    ]
+  },
+  {
+    "name": "Trivarietal Coffee",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-trivarietal",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/trivarietal_04545710-62c9-4527-af46-af7685657eca.png?v=1741885585&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/trivarietal_aa011b0c-0b95-49cb-9fc1-157c95314e91.png?v=1741900865&width=1100"
+    ],
+    "price": {
+      "regular": "$39.000 COP $49.000 COP",
+      "sale": "$39.000 COP $49.000 COP"
+    },
+    "profile": "Washing Process",
+    "altitude": "1,750 meters above sea level",
+    "process": "Washing",
+    "variety": ["Blend (Gesha, Red Bourbon, Tekisic)"],
+    "description": "Washing Process:\n\nIt is a process developed at the La Riviera coffee farm, in which the coffee is pulped after being harvested and left to ferment for 20-24 hours, before being washed and dried in the sun.",
+    "flavor_tags": ["complex", "fruity", "balanced"],
+    "body": ["medium"],
+    "acidity": ["medium"],
+    "mood_tags": ["harmonious", "refined", "aromatic"],
+    "expected_flavor": ["layered", "balanced"],
+    "notes": [
+      "gesha",
+      "red bourbon",
+      "tekisic",
+      "washed",
+      "medium-bodied",
+      "fruity",
+      "balanced"
+    ]
+  },
+  {
+    "name": "Brew Bags Mix Box",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/caja-mix-brew-bags",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/Caja_brew_bags_mix.png?v=1741904775&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/Screenshot-2024-07-29-at-10.59.15-PM.png?v=1741904775&width=1100"
+    ],
+    "price": {
+      "regular": "$32.000 COP $54.000 COP",
+      "sale": "$32.000 COP $54.000 COP"
+    },
+    "profile": "Mixed Coffee Box",
+    "altitude": "varies",
+    "process": "Washing",
+    "variety": [],
+    "description": "Washing Process:\n\nIt is a process developed at the La Riviera coffee farm, in which the coffee is pulped after being harvested and left to ferment for 20-24 hours, before being washed and dried in the sun.",
+    "flavor_tags": ["varied", "exploratory"],
+    "body": ["varied"],
+    "acidity": ["varied"],
+    "mood_tags": ["adventurous", "curious", "fun"],
+    "expected_flavor": ["mixed", "exploratory"],
+    "notes": ["mix box", "brew bags", "varied flavors", "exploratory", "fun"]
+  },
+  {
+    "name": "Mixed Drip Bags Box",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/caja-mix-drip-bags",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/Caja_drips_mix.png?v=1741904598&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/mixdripbag.png?v=1741904598&width=1100"
+    ],
+    "price": {
+      "regular": "$32.000 COP $54.000 COP",
+      "sale": "$32.000 COP $54.000 COP"
+    },
+    "profile": "Mixed Drip Coffee Box",
+    "altitude": "varies",
+    "process": "Various",
+    "variety": [],
+    "description": "The Mixed Box arrives: 10 different coffee varieties, from different origins and processes, so you can explore a world of flavors and aromas. All in a drip bag presentation, a practical and easy-to-use way to prepare delicious coffee anytime, anywhere.",
+    "flavor_tags": ["varied", "exploratory"],
+    "body": ["varied"],
+    "acidity": ["varied"],
+    "mood_tags": ["curious", "fun", "adventurous"],
+    "expected_flavor": ["mixed", "diverse"],
+    "notes": [
+      "mixed box",
+      "drip bags",
+      "10 varieties",
+      "exploratory",
+      "convenient"
+    ]
+  },
+  {
+    "name": "Combo Espooky",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/combo-cosecha-copy",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/halloween_combo.png?v=1760357187&width=1100"
+    ],
+    "price": { "regular": "$119.000 COP", "sale": "$119.000 COP" },
+    "profile": "Combo Pack",
+    "altitude": "varies",
+    "process": "Various",
+    "variety": [],
+    "description": "Combo pack containing different coffee products in one set, ideal for gifts or special occasions.",
+    "flavor_tags": ["varied"],
+    "body": ["varied"],
+    "acidity": ["varied"],
+    "mood_tags": ["festive", "gift", "special"],
+    "expected_flavor": ["mixed"],
+    "notes": ["combo pack", "varied", "gift", "special"]
+  },
+  {
+    "name": "Honey Coffee",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-honey",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/honey_a34956bd-c118-4c74-af0f-c88d03b77310.png?v=1741885557&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/honey_e7b2aed9-0e3e-4289-a692-402755b6986e.png?v=1741885624&width=1100"
+    ],
+    "price": {
+      "regular": "$32.000 COP $43.000 COP",
+      "sale": "$32.000 COP $43.000 COP"
+    },
+    "altitude": "1,750 meters above sea level",
+    "process": "Honey",
+    "variety": ["Caturra"],
+    "description": "Honey Process:\n\nIt is a process developed in the coffee farm La Riviera, where the coffee is pulped after harvesting and left to ferment with the mucilage for 30 hours, before being dried without washing.",
+    "flavor_tags": ["sweet", "fruity", "caramel"],
+    "body": ["medium"],
+    "acidity": ["medium"],
+    "mood_tags": ["smooth", "balanced", "aromatic"],
+    "expected_flavor": ["honeyed", "sweet"],
+    "notes": ["honey", "caturra", "mucilage", "sweet", "smooth", "fruity"]
+  },
+  {
+    "name": "Horeca Coffee",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-horeca",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/HORECA-2.png?v=1751057790&width=1100"
+    ],
+    "price": { "regular": "$180.000 COP", "sale": "$180.000 COP" },
+    "altitude": "1,750 meters above sea level",
+    "process": "Washing",
+    "variety": ["Blend Castillo", "Caturra"],
+    "description": "Washing Process:\n\nIt is a process developed in the coffee farm La Riviera, where the coffee is pulped after being harvested and left to ferment for 20-24 hours, before being washed and dried in the sun.",
+    "flavor_tags": ["balanced", "rich", "sweet"],
+    "body": ["full"],
+    "acidity": ["medium"],
+    "mood_tags": ["bold", "classic", "smooth"],
+    "expected_flavor": ["chocolatey", "nutty"],
+    "notes": ["blend", "caturra", "washed", "full-bodied", "rich", "smooth"]
+  },
+  {
+    "name": "Café La Riviera",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-la-riviera",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/la_riviera.png?v=1741885556&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/la_riviera_b63856cd-e56a-4d05-a7b0-3b569a31af23.png?v=1741901327&width=1100"
+    ],
+    "price": {
+      "regular": "$32.000 COP $43.000 COP",
+      "sale": "$32.000 COP $43.000 COP"
+    },
+    "altitude": "1,750 meters above sea level",
+    "process": "Washing",
+    "variety": ["Caturra", "Castle"],
+    "description": "Washing Process:\n\nIt is a process developed in the coffee farm La Riviera, where the coffee is pulped after being harvested and left to ferment for 20-24 hours, before being washed and dried in the sun.",
+    "flavor_tags": ["balanced", "smooth", "sweet"],
+    "body": ["medium"],
+    "acidity": ["medium"],
+    "mood_tags": ["classic", "aromatic", "calm"],
+    "expected_flavor": ["chocolatey", "nutty"],
+    "notes": ["caturra", "castle", "washed", "balanced", "smooth", "classic"]
+  },
+  {
+    "name": "Maypop Cafe",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-maypop",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/maypop.png?v=1741885556&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/maypop_f91a743d-3a1f-4f7c-91a1-833acf006352.png?v=1741901248&width=1100"
+    ],
+    "price": {
+      "regular": "$36.000 COP $47.000 COP",
+      "sale": "$36.000 COP $47.000 COP"
+    },
+    "altitude": "1,400 meters above sea level",
+    "process": "Culturing",
+    "variety": ["Caturra"],
+    "description": "Culturing Process:\n\nIt is a coffee fermentation technique in which starter cultures of fruits, aromatic plants and microorganisms are used.",
+    "flavor_tags": ["fruity", "aromatic", "sweet"],
+    "body": ["medium"],
+    "acidity": ["medium"],
+    "mood_tags": ["experimental", "vibrant", "bright"],
+    "expected_flavor": ["fruity", "floral"],
+    "notes": ["caturra", "cultured", "fruity", "aromatic", "smooth", "balanced"]
+  },
+  {
+    "name": "Natural Coffee",
+    "url": "https://www.cafeuba.com.co/en/collections/all/products/cafe-natural",
+    "images": [
+      "https://www.cafeuba.com.co/cdn/shop/files/natural_03f4cab6-8600-476c-b726-839527615293.png?v=1741885556&width=1100",
+      "https://www.cafeuba.com.co/cdn/shop/files/natural_c17f3709-33cd-4c92-8c3e-dd8de72b809d.png?v=1741885625&width=1100"
+    ],
+    "price": {
+      "regular": "$32.000 COP $43.000 COP",
+      "sale": "$32.000 COP $43.000 COP"
+    },
+    "altitude": "1,400 meters above sea level",
+    "process": "Natural",
+    "variety": ["Caturra", "Castle"],
+    "description": "Natural Process:\n\nIt is a process developed at the La Riviera coffee farm, in which the coffee, after being harvested, is left in water for 12 hours and then dried without pulping.",
+    "flavor_tags": ["fruity", "fermented", "sweet"],
+    "body": ["medium"],
+    "acidity": ["medium"],
+    "mood_tags": ["bold", "earthy", "complex"],
+    "expected_flavor": ["fermented", "fruit-forward"],
+    "notes": ["caturra", "castle", "natural", "fruity", "fermented", "sweet"]
+  }
+]

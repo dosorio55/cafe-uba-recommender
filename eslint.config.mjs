@@ -20,6 +20,18 @@ const eslintConfig = [
       "next-env.d.ts",
     ],
   },
+  {
+    rules: {
+      "@next/next/no-img-element": "off",
+      "react-refresh/only-export-components": "off",
+      "prettier/prettier": ["error", { "endOfLine": "auto" }],
+      "@typescript-eslint/no-empty-interface": "off",
+      "no-unused-expressions": "warn",
+      "no-unused-vars": "warn",
+      "no-useless-computed-key": "off",
+      "@typescript-eslint/ban-ts-comment": "off"
+    }
+  }
 ];
 
 export default eslintConfig;

@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="font-sans min-h-screen">
       <Header />
-      <div className="px-6 sm:px-10">
+      <div className="container mx-auto px-6 sm:px-10">
         <SearchHero />
         <ProductsList />
       </div>

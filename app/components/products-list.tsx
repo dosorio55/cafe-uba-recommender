@@ -20,7 +20,6 @@ const ProductsList = () => {
         const res = await fetch("/api/scrape", { cache: "no-store" });
         const data = await res.json();
         setProducts(data);
-        
       } catch (error) {
         console.error("Error fetching products:", error);
       } finally {
@@ -64,15 +63,16 @@ const ProductsList = () => {
         const href = p.url || "#";
         const img = p.images?.[0];
         const priceText = p.price?.sale || p.price?.regular || "";
+
         return (
           <a
             key={idx}
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="group border border-border rounded-lg overflow-hidden bg-card hover:shadow-sm transition-shadow"
+            className="group overflow-hidden bg-card transition-shadow"
           >
-            <div className="aspect-[1/1] bg-muted overflow-hidden">
+            <div className="aspect-[1/1] overflow-hidden">
               {img ? (
                 <img
                   src={img}
