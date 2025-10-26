@@ -2,8 +2,13 @@
 
 import { useMemo, useState } from "react";
 import { generateBaristaReply } from "../core/agent-barista.core";
+import { CoffeeCategory } from "@/global/agents/barista-agent/barista-agent";
 
-export default function SearchHero() {
+export default function SearchHero({
+  onSelectCategories,
+}: {
+  onSelectCategories?: (selected: CoffeeCategory) => void;
+}) {
   const suggestions = useMemo(
     () => [
       "medium roast",
@@ -37,12 +42,12 @@ export default function SearchHero() {
       setLoading(true);
       setReply(null);
 
-      const reply = await generateBaristaReply(query);
-      if (!reply) {
-        throw new Error("Request failed");
-      }
+      const result = await generateBaristaReply(query);
 
-      setReply(reply);
+      if (!result) throw new Error("Request failed");
+
+      onSelectCategories?.(result);
+      setReply(result.reply);
     } catch (error) {
       console.error(error);
     } finally {
@@ -51,13 +56,13 @@ export default function SearchHero() {
   };
 
   return (
-    <section className="w-full flex flex-col items-center gap-6 py-12">
+    <section className="container w-full flex flex-col items-center gap-6 py-12">
       <h2 className="text-2xl md:text-3xl font-display text-foreground tracking-wide">
         What coffee do you want today?
       </h2>
       <form
         onSubmit={onSubmit}
-        className="w-full max-w-2xl flex items-stretch gap-2"
+        className="w-full flex items-stretch gap-2"
       >
         <input
           value={query}
@@ -73,7 +78,7 @@ export default function SearchHero() {
           Search
         </button>
       </form>
-      <div className="w-full max-w-2xl flex flex-wrap gap-2">
+      <div className="w-full flex flex-wrap gap-2">
         {suggestions.map((s) => (
           <button
             key={s}
@@ -85,7 +90,7 @@ export default function SearchHero() {
           </button>
         ))}
       </div>
-      <div className="w-full max-w-2xl mt-4">
+      <div className="w-full mt-4">
         {loading && (
           <div className="rounded-md border border-border bg-card p-4 text-sm text-muted-foreground">
             Thinking...

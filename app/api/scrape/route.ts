@@ -1,8 +1,8 @@
-export const runtime = 'nodejs'
+export const runtime = "nodejs";
 
-import { scrapeCafeUbaCollection } from '../../core/landing.core'
+import { scrapeCafeUbaCollection } from "../../core/landing.core";
 
-export async function GET() {
-  const data = await scrapeCafeUbaCollection()
-  return Response.json(data)
+export async function GET(request: Request) {
+  const data = await scrapeCafeUbaCollection();
+  return Response.json(data);
 }

@@ -83,17 +83,20 @@ class MainAgent {
 
   async runGenerateObject(
     prompt: string,
-    schema: z.ZodType<any>
+    schema: z.ZodType<any>,
+    instructions?: string
   ): Promise<z.infer<typeof schema>> {
     let lastError: unknown;
     for (let attempt = 1; attempt <= 3; attempt++) {
       try {
         logger.info(`Generating object with agent ${this.constructor.name}`);
 
+        const fullPrompt = instructions ? `${instructions}\n\n${prompt}` : prompt;
+
         const { object: response, usage } = await generateObject({
           model: this.model,
           schema: schema as any,
-          prompt,
+          prompt: fullPrompt,
         });
 
         logger.info(`Generated object with agent ${JSON.stringify(response)}`);

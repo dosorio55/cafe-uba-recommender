@@ -5,11 +5,11 @@ import {
   getChromiumExecutablePath,
 } from "./chromium-singleton";
 import puppeteer from "puppeteer-core";
-import { ScrapedProduct } from "./product.models";
+import { CoffeeProduct } from "./product.models";
 
-export async function scrapeCafeUbaCollection(
-  collectionUrl: string = "https://www.cafeuba.com.co/en/collections/all"
-): Promise<ScrapedProduct[]> {
+const UBA_URL = "https://www.cafeuba.com.co/en/collections/all";
+
+export async function scrapeCafeUbaCollection(): Promise<CoffeeProduct[]> {
   const launchOptions: Parameters<typeof puppeteer.launch>[0] = {
     headless: true,
     args: getChromiumArgs(),
@@ -20,7 +20,7 @@ export async function scrapeCafeUbaCollection(
   try {
     const page = await browser.newPage();
 
-    await page.goto(collectionUrl, {
+    await page.goto(UBA_URL, {
       waitUntil: "networkidle2",
       timeout: 120000,
     });
@@ -45,10 +45,10 @@ export async function scrapeCafeUbaCollection(
       prevCount = after;
     }
 
-    const origin = new URL(collectionUrl).origin;
+    const origin = new URL(UBA_URL).origin;
 
     const data = await page.evaluate((originIn) => {
-      const out: ScrapedProduct[] = [];
+      const out: CoffeeProduct[] = [];
       const grid = document.querySelector("#product-grid");
 
       if (!grid) return out;

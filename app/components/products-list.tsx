@@ -1,35 +1,15 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { CoffeeProduct } from "../core/product.models";
 
-const ProductsList = () => {
-  type Price = { regular?: string; sale?: string };
-  type Product = {
-    name?: string;
-    url?: string;
-    images: string[];
-    price: Price;
-  };
-
-  const [products, setProducts] = useState<Product[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const res = await fetch("/api/scrape", { cache: "no-store" });
-        const data = await res.json();
-        setProducts(data);
-      } catch (error) {
-        console.error("Error fetching products:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchProducts();
-  }, []);
-
+const ProductsList = ({
+  products,
+  loading,
+}: {
+  products: CoffeeProduct[];
+  loading: boolean;
+}) => {
   if (loading) {
     return (
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -84,7 +64,7 @@ const ProductsList = () => {
                 <div className="w-full h-full bg-muted" />
               )}
             </div>
-            <div className="p-4">
+            <div className="p-4 flex flex-col justify-center items-center">
               <div className="text-sm font-medium text-foreground line-clamp-2">
                 {p.name || "Unnamed"}
               </div>

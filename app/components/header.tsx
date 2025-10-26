@@ -56,7 +56,7 @@ export default function Header() {
             <li>
               <Link
                 href="/"
-                className="header__menu-item header__menu-item--top list-menu__item focus-inset text-foreground hover:opacity-80"
+                className="header__menu-item header__menu-item--top list-menu__item focus-inset text-foreground hover:opacity-80 relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
               >
                 <span className="label">START</span>
               </Link>
@@ -64,7 +64,7 @@ export default function Header() {
             <li>
               <Link
                 href="/about"
-                className="header__menu-item header__menu-item--top list-menu__item focus-inset text-foreground hover:opacity-80"
+                className="header__menu-item header__menu-item--top list-menu__item focus-inset text-foreground hover:opacity-80 relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
               >
                 <span className="label">US</span>
               </Link>
@@ -72,7 +72,7 @@ export default function Header() {
             <li>
               <Link
                 href="/collections"
-                className="header__menu-item header__menu-item--top list-menu__item focus-inset text-foreground hover:opacity-80"
+                className="header__menu-item header__menu-item--top list-menu__item focus-inset text-foreground hover:opacity-80 relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
               >
                 <span className="label">STORE</span>
               </Link>
@@ -80,7 +80,7 @@ export default function Header() {
             <li>
               <a
                 href="https://wa.me/573105974290?text=Hola%20Caf%C3%A9%20Uba%2C%20estoy%20antojado%20del%20mejor%20caf%C3%A9"
-                className="header__menu-item header__menu-item--top list-menu__item focus-inset text-foreground hover:opacity-80"
+                className="header__menu-item header__menu-item--top list-menu__item focus-inset text-foreground hover:opacity-80 relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -184,7 +184,7 @@ export default function Header() {
                 <li>
                   <Link
                     href="/"
-                    className="menu-drawer__menu-item list-menu__item focus-inset"
+                    className="menu-drawer__menu-item list-menu__item focus-inset relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
                   >
                     START
                   </Link>
@@ -192,7 +192,7 @@ export default function Header() {
                 <li>
                   <Link
                     href="/about-us"
-                    className="menu-drawer__menu-item list-menu__item focus-inset"
+                    className="menu-drawer__menu-item list-menu__item focus-inset relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
                   >
                     US
                   </Link>
@@ -200,7 +200,7 @@ export default function Header() {
                 <li>
                   <Link
                     href="/collections/all"
-                    className="menu-drawer__menu-item list-menu__item focus-inset"
+                    className="menu-drawer__menu-item list-menu__item focus-inset relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
                   >
                     STORE
                   </Link>
@@ -208,7 +208,7 @@ export default function Header() {
                 <li>
                   <a
                     href="https://wa.me/573105974290?text=Hola%20Caf%C3%A9%20Uba%2C%20estoy%20antojado%20del%20mejor%20caf%C3%A9"
-                    className="menu-drawer__menu-item list-menu__item focus-inset"
+                    className="menu-drawer__menu-item list-menu__item focus-inset relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
